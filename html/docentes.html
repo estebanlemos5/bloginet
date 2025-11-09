@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal Docente - INET</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+ 
+</head>
+
+
+<style>
+     body {
+      background-color: #f4f6f9;
+      font-family: 'Poppins', sans-serif;
+      transition: background 0.4s ease, color 0.4s ease;
+    }
+    header {
+      background: linear-gradient(90deg, #003366, #007bff);
+      color: white;
+      padding: 2rem 0;
+      text-align: center;
+    }
+    .navbar {
+      background-color: #002b5b !important;
+    }
+    .card img {
+      height: 200px;
+      object-fit: cover;
+    }
+    .card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+    footer {
+      background-color: #001f3f;
+      color: #fff;
+      text-align: center;
+      padding: 1.5rem 0;
+      margin-top: 3rem;
+    }
+    .dark-mode {
+      background-color: #121212 !important;
+      color: #f1f1f1 !important;
+    }
+    .dark-mode .card {
+      background-color: #1e1e1e;
+      color: #f1f1f1;
+    }
+    .dark-mode .navbar, .dark-mode footer {
+      background-color: #000814 !important;
+    }
+    .mode-toggle {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1000;
+      border-radius: 50%;
+    }
+</style>
+<body>
+  <header>
+    <h1>Portal Docente INET</h1>
+    <p>Recursos, información y gestiones para el cuerpo docente</p>
+  </header>
+
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="/index.html">Inicio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto text-end">
+          <li class="nav-item"><a class="nav-link" href="#certificaciones">Certificaciones Médicas</a></li>
+          <li class="nav-item"><a class="nav-link" href="#formularios">Formularios</a></li>
+          <li class="nav-item"><a class="nav-link" href="#inasistencias">Inasistencias</a></li>
+          <li class="nav-item"><a class="nav-link" href="#organigrama">Organigrama</a></li>
+          <li class="nav-item"><a class="nav-link" href="#convocatoria">Convocatoria</a></li>
+          <li class="nav-item"><a class="nav-link" href="#resoluciones">Resoluciones</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div id="carouselDocente" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://picsum.photos/id/1/1200/400"  class="d-block w-100" alt="Docentes INET">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Bienvenidos al Portal Docente</h5>
+          <p>Un espacio para la gestión, la formación y la comunicación institucional.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://picsum.photos/id/42/1200/400" class="d-block w-100" alt="Reunión de docentes">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Gestiones simplificadas</h5>
+          <p>Accede fácilmente a tus trámites y documentos en línea.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://picsum.photos/id/44/1200/400" class="d-block w-100" alt="Educación técnica">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Comprometidos con la educación técnica</h5>
+          <p>Promoviendo la innovación y el desarrollo profesional.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselDocente" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselDocente" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    </button>
+  </div>
+
+  <main class="container my-5">
+    <div class="row g-4">
+      <div class="col-md-4" id="certificaciones">
+        <div class="card">
+          <img src="/img/licenciaMedica.png" class="card-img-top" alt="Certificaciones Médicas">
+          <div class="card-body">
+            <h5 class="card-title">Certificaciones Médicas</h5>
+            <p class="card-text">Encuentra los procedimientos y formularios para la presentación de certificados médicos.</p>
+            <a href="https://youtu.be/V6uFqJYxFZ0" class="btn btn-primary" target="_blank">Ver video</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" id="formularios">
+        <div class="card">
+          <img src="/img/formularios.jpg" class="card-img-top" alt="Formularios Docentes">
+          <div class="card-body">
+            <h5 class="card-title">Formularios Docentes</h5>
+            <p class="card-text">Accede a los distintos formularios administrativos disponibles para docentes.</p>
+            <a href="https://www.anep.edu.uy" class="btn btn-primary" target="_blank">Ver más</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" id="inasistencias">
+        <div class="card">
+          <img src="/img/enfermos.jpg" class="card-img-top" alt="Inasistencias Docentes">
+          <div class="card-body">
+            <h5 class="card-title">Inasistencias Docentes</h5>
+            <p class="card-text">Consulta y gestiona tus inasistencias de forma transparente y actualizada.</p>
+            <a href="https://youtu.be/yI6bUBlTnlw" class="btn btn-primary" target="_blank">Tutorial</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" id="organigrama">
+        <div class="card">
+          <img src="/img/organigrama.jpg" class="card-img-top" alt="Organigrama Institucional">
+          <div class="card-body">
+            <h5 class="card-title">Organigrama Institucional</h5>
+            <p class="card-text">Conoce la estructura institucional y los roles de gestión del INET.</p>
+            <a href="https://youtu.be/ADoD58Qf42c" class="btn btn-primary" target="_blank">Ver video</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" id="convocatoria">
+        <div class="card">
+          <img src="/img/eleccion.jpg" class="card-img-top" alt="Convocatoria a Elección de Horas">
+          <div class="card-body">
+            <h5 class="card-title">Convocatoria a Elección de Horas</h5>
+            <p class="card-text">Infórmate sobre los llamados vigentes para elección de horas docentes.</p>
+            <a href="https://youtu.be/FvsyTYQJQmM" class="btn btn-primary" target="_blank">Más información</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" id="resoluciones">
+        <div class="card">
+          <img src="/img/resolucion.jpg" class="card-img-top" alt="Resoluciones">
+          <div class="card-body">
+            <h5 class="card-title">Resoluciones</h5>
+            <p class="card-text">Consulta las resoluciones y disposiciones administrativas vigentes para docentes.</p>
+            <a href="https://youtu.be/Gx1Zs2CCc5M" class="btn btn-primary" target="_blank">Ver resoluciones</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Blog INET. Todos los derechos reservados.</p>
+    <p>Diseñado por Esteban Lemos & Andrés del Valle</p>
+  </footer>
+
+  <button class="btn btn-dark mode-toggle" id="darkModeBtn"><i class="bi bi-moon"></i></button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.js"></script>
+  <script>
+    const toggleBtn = document.getElementById('darkModeBtn');
+    toggleBtn.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+    });
+  </script>
+</body>
+</html>

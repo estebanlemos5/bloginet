@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/icons/calendario.png">
+    <link rel="stylesheet" href="/css/stylo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Mesa de Exámenes</title>
+    <style>
+        th{
+            text-align: center;
+        }
+        td{
+            text-align: center;
+            width: auto;
+        }
+
+    </style>
+</head>
+<body>
+
+    
+<div style="box-shadow: 0 15px 10px rgb(0, 0,0, 0.2); border-radius: 0px 25px 0px 25px; font-size: 1.2rem; ">
+        <nav class="menu mb-1 p-1 text-white d-flex justify-content-around " style=" border-radius: 0px 25px 0px 25px; font-size: 1.2rem; background: #131729;box-shadow: 0 0 7px 1px #BEE010, 0 0 7px 1px #BEE010, 0 0 7px 1px #FF1493, 0 0 7px 1px #FF1493;">
+            <a class="text-white" href="../index.html">Inicio</a>
+            <a class="text-white" href="../html/blog.html" target="_blank">Noticias</a>
+            <a class="text-white" href="#" target="_blank">Estudiantes</a>
+            <a class="text-white" href="../html/horarios.html" target="_blank">Horarios</a>
+            <a class="text-white" href="#" target="_blank">Docentes</a>
+            <a class="text-white" href="../html/contactos.html" target="_blank">Contacto</a>
+
+
+        </nav>
+    </div>
+
+    <header>
+        <h1 class="text-dark d-flex justify-content-center mb-4 mt-5">Mesa de Exámenes - 2025</h1>
+    </header>
+
+
+    <div class="container bg-secondary text-white col-md-10" style="padding: 30px; border-radius: 15px; box-shadow: 0 20px 25px rgba(0, 0, 0, 20)">
+
+        <table class="table table-striped table-hover table-bordered" style="margin-top: 20px;">
+            <thead >
+                <tr>
+                    <th>Carrera</th>
+                    <th>Asignatura</th>
+                    <th colspan="3">Tribunal</th>
+                    <th>Año</th>
+                    <th  style="width: 8em;">Fecha</th>
+                    <th style="width: 8em;">Horario</th>
+                    <th>Salón</th>
+                    <th style= "width: 6em;">Ver Grilla</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Informática</td>
+                    <td>Programación 1</td>
+                    <td>Juan Pérez</td>
+                    <td>María Paz</td>
+                    <td>Deisy Martinez</td>
+                    <td>1°</td>
+                    <td>15/07/2025</td>
+                    <td>10:00 - 12:00</td>
+                    <td>101</td>
+                    <td><a href="/html/grillaAsignaturas.html" target="_blank" class="btn btn-primary btn-sm" >Ver</a></td>
+                </tr>
+                 <tr>
+                    <td>Informática</td>
+                    <td>Base de Datos</td>
+                    <td>Menecucho Martinez</td>
+                    <td>Cesar Días</td>
+                    <td>Julieta López</td>
+                    <td>1°</td>
+                    <td>18/07/2025</td>
+                    <td>08:00 - 10:00</td>
+                    <td>102</td>
+                    <td><a href="/html/grillaAsignaturas.html" target="_blank" class="btn btn-primary btn-sm" >Ver</a></td>
+                </tr>
+               <tr>
+                    <td>Informática</td>
+                    <td>Analisis de Redes</td>
+                    <td>Jaime Baili</td>
+                    <td>Clara Chia</td>
+                    <td>Iglesia Colmenares</td>
+                    <td>1°</td>
+                    <td>20/07/2025</td>
+                    <td>11:00 - 13:00</td>
+                    <td>108</td>
+                    <td><a href="/html/grillaAsignaturas.html" target="_blank" class="btn btn-primary btn-sm" >Ver</a></td>
+                </tr>
+               <tr>
+                    <td>Informática</td>
+                    <td>OEIE</td>
+                    <td>Miriam Peralta</td>
+                    <td>Ingrid Sosa</td>
+                    <td>Joel Clara</td>
+                    <td>1°</td>
+                    <td>21/07/2025</td>
+                    <td>08:00 - 10:00</td>
+                    <td>102</td>
+                    <td><a href="/html/grillaAsignaturas.html" target="_blank" class="btn btn-primary btn-sm" >Ver</a></td>
+                </tr>
+                <tr>
+                    <td>Informática</td>
+                    <td>Psicología de la Educación I</td>
+                    <td>Mamimiliano Marino</td>
+                    <td>Richard López</td>
+                    <td>Miguel Kartiel</td>
+                    <td>1°</td>
+                    <td>21/07/2025</td>
+                    <td>10:00 - 12:00</td>
+                    <td>104</td>
+                    <td><a href="/html/grillaAsignaturas.html" target="_blank" class="btn btn-primary btn-sm" >Ver</a></td>
+                </tr>
+            </tbody>
+        </table>
+
+
+
+
+
+
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+</html>

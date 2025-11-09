@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog Docente INET Uruguay</title>
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f8f9fa;
+      font-family: 'Poppins', sans-serif;
+    }
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.4)),
+        url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1350&q=80') center/cover;
+      color: white;
+      text-align: center;
+      padding: 120px 20px;
+      border-bottom: 5px solid #0d6efd;
+    }
+    .card img {
+      height: 220px;
+      object-fit: cover;
+      border-top-left-radius: .5rem;
+      border-top-right-radius: .5rem;
+    }
+    footer {
+      background: #0d6efd;
+      color: white;
+      text-align: center;
+      padding: 25px 0;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">INET Uruguay</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navmenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a href="#articulos" class="nav-link">Artículos</a></li>
+        <li class="nav-item"><a href="#contacto" class="nav-link">Contacto</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="container">
+    <h1 class="display-5 fw-bold">Blog Docente del INET Uruguay</h1>
+    <p class="lead">Información, formularios y resoluciones para docentes de la Educación Técnico Profesional.</p>
+  </div>
+</section>
+
+<!-- Artículos -->
+<section id="articulos" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4 fw-bold text-primary">Artículos Destacados</h2>
+    <div class="row g-4">
+
+      <!-- Certificaciones Médicas -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card shadow-sm">
+          <img src="https://images.unsplash.com/photo-1588776814546-98ef0b1ba3a8?auto=format&fit=crop&w=800&q=80" alt="Certificaciones Médicas">
+          <div class="card-body">
+            <h5 class="card-title">Certificaciones Médicas</h5>
+            <p class="card-text">Procedimiento y formulario oficial para la presentación de certificaciones médicas docentes.</p>
+            <div class="ratio ratio-16x9 mb-2">
+              <iframe src="https://www.youtube.com/embed/VIDEOLINK1" title="Video explicativo" allowfullscreen></iframe>
+            </div>
+            <a href="#" class="btn btn-primary w-100"><i class="bi bi-download"></i> Descargar formulario</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Formularios Docentes -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card shadow-sm">
+          <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80" alt="Formularios Docentes">
+          <div class="card-body">
+            <h5 class="card-title">Formularios Docentes</h5>
+            <p class="card-text">Accedé a los principales formularios de uso docente: licencias, traslados y notificaciones.</p>
+            <video class="w-100 rounded mb-2" controls>
+              <source src="video_formularios.mp4" type="video/mp4">
+            </video>
+            <a href="#" class="btn btn-outline-primary w-100"><i class="bi bi-folder"></i> Ver Formularios</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Inasistencias Docentes -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card shadow-sm">
+          <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=800&q=80" alt="Inasistencias Docentes">
+          <div class="card-body">
+            <h5 class="card-title">Inasistencias Docentes</h5>
+            <p class="card-text">Guía y registro de inasistencias. Normativas vigentes y pasos para su comunicación al Instituto.</p>
+            <div class="ratio ratio-16x9 mb-2">
+              <iframe src="https://www.youtube.com/embed/VIDEOLINK2" title="Normativa de Inasistencias"></iframe>
+            </div>
+            <a href="#" class="btn btn-primary w-100"><i class="bi bi-info-circle"></i> Más Información</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Organigrama Institucional -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card shadow-sm">
+          <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=800&q=80" alt="Organigrama Institucional">
+          <div class="card-body">
+            <h5 class="card-title">Organigrama Institucional</h5>
+            <p class="card-text">Conocé la estructura organizativa del INET, sus departamentos y autoridades responsables.</p>
+            <img src="organigrama_inet.png" class="w-100 rounded mb-2" alt="Organigrama INET">
+            <a href="#" class="btn btn-outline-primary w-100"><i class="bi bi-diagram-3"></i> Descargar PDF</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Convocatoria a Elección de Horas -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card shadow-sm">
+          <img src="https://images.unsplash.com/photo-1515169067865-5387ec356754?auto=format&fit=crop&w=800&q=80" alt="Convocatoria de Horas">
+          <div class="card-body">
+            <h5 class="card-title">Convocatoria a Elección de Horas</h5>
+            <p class="card-text">Fechas, condiciones y procedimiento para la elección de horas docentes del año en curso.</p>
+            <video class="w-100 rounded mb-2" controls>
+              <source src="convocatoria_video.mp4" type="video/mp4">
+            </video>
+            <a href="#" class="btn btn-primary w-100"><i class="bi bi-calendar-event"></i> Ver Convocatoria</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Resoluciones -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card shadow-sm">
+          <img src="https://images.unsplash.com/photo-1581093588401-22c93d265a00?auto=format&fit=crop&w=800&q=80" alt="Resoluciones INET">
+          <div class="card-body">
+            <h5 class="card-title">Resoluciones</h5>
+            <p class="card-text">Accedé al archivo actualizado de resoluciones y comunicados oficiales del INET Uruguay.</p>
+            <div class="ratio ratio-16x9 mb-2">
+              <iframe src="https://www.youtube.com/embed/VIDEOLINK3" title="Resoluciones y Comunicados"></iframe>
+            </div>
+            <a href="#" class="btn btn-outline-primary w-100"><i class="bi bi-file-earmark-text"></i> Consultar Resoluciones</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer id="contacto">
+  <div class="container">
+    <p class="mb-1">© 2025 INET Uruguay — Instituto Nacional de Educación Tecnológica</p>
+    <small><i class="bi bi-geo-alt"></i> Montevideo, Uruguay | <i class="bi bi-envelope"></i> contacto@inet.edu.uy</small>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
