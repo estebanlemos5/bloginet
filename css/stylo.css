@@ -1,0 +1,303 @@
+/* Estilos generales, al cargar la página, reset las propiedades que pueda tener según el navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+#animacion{
+    /* Copy code to element you want to animate */  
+    animation: customAni 3s ease-in-out 0s infinite reverse backwards;
+}
+
+
+
+body {
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    background-color: #f2f2f2;
+    color: #333;
+    padding: 20px;
+}
+
+.banner {
+    min-height: 30vh;
+    /* height: 20vh; */
+    position: relative;
+}
+
+
+video{
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+.capa{
+
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 1);
+    opacity: 0.5;
+    mix-blend-mode: overlay;
+}
+
+.ancla {
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: larger;
+    color: white;
+    width: 40px;
+    border-radius: 5px;
+    border: #283048 1px solid;
+    background-color: #4d8b31;
+    box-shadow: orange 1px 1px 10px;
+}
+
+.menu {
+    /* para que el menu se quede pegado */
+    position: sticky;
+    /* le indicamos la posición donde se quedará pegado el menu */
+    top: 0;
+    left: 0;
+    /* centramos el menu */
+    /* text-align: center; (quitado para Bootstrap) */
+    /* fondo del menu se pasa al HTML para el efecto de sombra */
+    /* color del texto del menu se maneja con clases de Bootstrap */
+    padding: 0; /* Ajustado para Navbar */
+    z-index: 1020; /* Aseguramos que el menú sticky esté por encima */
+}
+
+/* Nota: La sección 'a' anidada fue eliminada de .menu para evitar conflictos con Bootstrap. */
+
+
+/* contenido principal */
+main {
+    max-width: 1000px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+
+    img {
+        width: 450px;
+        height: 450px;
+        margin: 20px 0;
+        box-shadow: #333 5px 5px 15px;
+    }
+}
+
+.articulo {
+    margin-bottom: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0px 30px 5px ;
+    line-height: 1.6;
+    color: #333;
+
+    h2,
+    h3 {
+        line-height: 2rem;
+        margin-bottom: 20px;
+        font-family: 'Times New Roman', Times, serif;
+        color: #14171e;
+    }
+}
+
+.a1 {
+    
+    /* Estilo para el artículo 1 Generamos un baston de color verde a la izquierda */
+    background-color: #f9f9f9;
+    
+    img {
+        max-width: 100%;
+        height: auto;
+        margin: 20px 0;
+        box-shadow: #333 5px 5px 15px;
+    }
+
+    &:hover {
+        background-color: #f1f1f1;
+    }
+}
+
+.a2 {
+    text-align: center;
+    /* Estilo para el artículo 2 Generamos un baston de color naranja a la izquierda */
+    background-color: #f9f9f9;
+    /* border-right: 5px solid orange; */
+    padding: 10px;
+
+    img {
+        max-width: 100%;
+        height: auto;
+        margin: 20px 0;
+        box-shadow: #333 5px 5px 15px;
+    }
+
+    &:hover {
+        background-color: #f1f1f1;
+    }
+}
+
+.a3 {
+    text-align: center;
+    /* Estilo para el artículo 3 Generamos un baston de color verde a la izquierda */
+    background-color: #f9f9f9;
+    /* border-left: 10px solid burlywood; */
+    padding: 10px;
+
+    /* Estilo para el artículo 3 Generamos un baston de color verde a la izquierda */
+    background-color: #f9f9f9;
+    /* border-right: 10px solid aquamarine; */
+    padding: 10px;
+
+    img {
+        max-width: 100%;
+        height: auto;
+        margin: 20px 0;
+        box-shadow: #333 5px 5px 15px;
+    }
+
+    &:hover {
+        background-color: #f1f1f1;
+    }
+
+}
+
+hr {
+    border: 5px solid olivedrab;
+    box-shadow: #333 5px 5px 15px;
+    margin: 20px 0;
+    border-radius: 10px solid #ccc;
+
+}
+
+
+.lista {
+    border: 5px solid olivedrab;
+    margin: 20px 0;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    padding: 10px;
+
+    ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+            margin: 10px 0;
+
+            a {
+                color: olivedrab;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+/* 1. Estilo base (sin hover) */
+.mi-tarjeta-hover {
+    background-color: rgb(86, 255, 80);
+    /* Sombra ligera para diferenciarla del fondo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Transición suave para el efecto hover */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #dee2e6;
+    /* Borde sutil */
+}
+
+/* 2. Estilo cuando el ratón está encima (hover) */
+.mi-tarjeta-hover:hover {
+    background-color: coral;
+    /* Efecto: levanta la tarjeta */
+    transform: translateY(-5px);
+    /* Efecto: hace la sombra más intensa */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+    /* Opcional: Cambiar el color del borde al pasar el ratón */
+    border-color: #007bff;
+}
+
+/* Asegura que el sidebar tenga un alto mínimo en pantallas grandes */
+@media (min-width: 768px) {
+    .sidebar-menu {
+        min-height: calc(100vh - 80px);
+        /* Ajusta la altura */
+        background-color: #f8f9fa;
+        /* Color de fondo claro para el menú lateral */
+        padding-top: 20px;
+    }   
+}
+
+/* --- ESTILOS AGREGADOS PARA EL MENÚ RESPONSIVO --- */
+
+/* Sobreescribe el hover de Bootstrap para aplicar el estilo de neón */
+.navbar-nav .nav-link:hover {
+    background-color: #BEE010;
+    color: #14171e !important; /* Aseguramos que el texto sea oscuro en el hover */
+    border-radius: 5px;
+}
+
+/* En móvil, los enlaces se apilan, aseguramos que tengan espacio */
+@media (max-width: 991.98px) {
+    .navbar-nav .nav-item {
+        margin: 5px 0;
+    }
+}
+
+/* --- ESTILOS RESPONSIVOS PARA EL TÍTULO DEL BANNER --- */
+
+/* Estilos por defecto (para escritorio y pantallas grandes) */
+.banner-titulo {
+    position: absolute;
+    left: 14%; /* Ajusta la posición de forma relativa */
+    top: 50%;
+    transform: translateY(-50%); /* Centrado vertical perfecto */
+    font-family: 'Poppins', sans-serif;
+    font-size: 3em; 
+    z-index: 2; /* Asegura que esté por encima del video y la capa */
+    text-align: left !important; /* Asegura que el texto se alinee a la izquierda dentro de su contenedor */
+    width: 70%; /* Limita el ancho para que no choque con el logo */
+}
+
+/* Media Query para Tabletas (Pantallas menores a 992px) */
+@media (max-width: 991.98px) {
+    .banner-titulo {
+        font-size: 2.2em;
+        left: 15%;
+        width: 80%;
+    }
+}
+
+/* Media Query para Móviles (Pantallas menores a 576px) */
+@media (max-width: 575.98px) {
+    .banner-titulo {
+        font-size: 1.5em; /* Reducir el tamaño de la fuente */
+        left: 5%; /* Mover a la izquierda para tener más espacio */
+        top: 60%; /* Ajustar la posición vertical */
+        width: 90%; /* Usar casi todo el ancho */
+        text-align: center !important; /* Centrar el texto en móvil */
+    }
+}
+/* Sobreescribe el hover de Bootstrap para aplicar el estilo de neón */
+.navbar-nav .nav-link:hover {
+    background-color: #BEE010;
+    /* !important es necesario para forzar la sobreescritura del color blanco que aplica Bootstrap en la clase navbar-dark */
+    color: #14171e !important; 
+    border-radius: 5px;
+}

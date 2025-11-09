@@ -1,0 +1,61 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.titulo{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+.tabla{
+
+    border: 1px solid black;
+    width: 100%;
+    /* Estilo para el colapso de bordes da una mejor presentación */
+    border-collapse: collapse;
+
+    
+
+    /* Dentro de la tabla queremos acceder a las filas, encabezados y celdas
+    y le vamos a aplicar estilos específicos */
+
+    tr,
+    th,
+    td {
+        border: 1px solid black;
+        padding: 10px;
+        text-align: center;
+       
+    }
+    /* Accedemos al encabezado y queremos cambiar el color de fondo */
+    thead {
+        background-color: #00293f;
+
+        /* accedemos al color del texto y espaciado del encabezado */
+        th {
+            color: white;
+            padding: 10px 0;
+        }
+    }
+    /* Estilo para el cuerpo de la tabla osea a cada celda */
+    tbody {
+        tr {
+            background-color: white;
+        }
+
+        /* aplico hover a las filas */
+        tr:hover {
+            background-color: orange;
+            color: white;
+        }
+    }
+}

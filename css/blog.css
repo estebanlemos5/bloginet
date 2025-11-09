@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+/* Contenedor principal para las columnas */
+.contenedor_blog {
+    display: flex; /* Activa el modo Flexbox */
+    justify-content: space-between; /* Distribuye el espacio entre los elementos */
+    gap: 20px; /* Espacio entre las columnas */
+    max-width: 1300px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+/* Columna de contenido principal */
+.columna_izquierda {
+    flex: 3; /* Ocupa 3 partes del espacio disponible */
+}
+
+/* Columna lateral */
+.columna_derecha {
+    flex: 1; /* Ocupa 1 parte del espacio disponible */
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+article {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h2{
+    color: #142E90;
+} 
+h3 {
+    color: #333;
+}
+
+h5{
+    margin: 15px 0;
+    color: tomato;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.contenedor_articulo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.imagen {
+    max-width: 200px;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Media query para pantallas más pequeñas (modo responsivo) */
+@media (max-width: 768px) {
+    .contenedor_blog {
+        flex-direction: column; /* Cambia a una sola columna para móviles */
+        gap: 0; /* Elimina el espacio entre columnas */
+    }
+
+    .columna_izquierda, .columna_derecha {
+        flex: auto; /* Permite que las columnas ocupen el ancho completo */
+    }
+    
+    .columna_derecha{
+        margin-top: 20px; /* Añade espacio entre la columna de artículos y la barra lateral */
+    }
+}

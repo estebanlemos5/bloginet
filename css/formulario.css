@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.titulo {
+    font-size: 2rem;
+    margin: 20px 0;
+    text-align: center;
+    color: #4CAF50;
+    text-shadow: #c2c2c2 1px 1px 2px;
+}
+#formulario{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.etiqueta {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    color: #4CAF50;
+    text-shadow: #c2c2c2 1px 1px 2px;
+}
+.input{
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #c2c2c2;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button{
+    /* Estilos para el botón */
+
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
